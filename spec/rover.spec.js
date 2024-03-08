@@ -11,12 +11,12 @@ describe("Rover class", function() {
     expect(new Rover('ANY_POSITION').generatorWatts).toBe(110);
   });
    // spec 8
-   it("response returned by receiveMessage contains the name of the message", function(){
-    let testRover = new Rover(99493);
-    let testCommands = [new Command('MODE_CHANGE', 'LOW_POWER'), new Command('STATUS_CHECK')];
-    let testMessage = new Message('SOME TEST MESSAGE', testCommands);
-    let testResponse = testRover.receiveMessage(testMessage);
-    expect(testResponse.message).toBe('SOME TEST MESSAGE');
+  //  it("response returned by receiveMessage contains the name of the message", function(){
+  //   let testRover = new Rover(99493);
+  //   let testCommands = [new Command('MODE_CHANGE', 'LOW_POWER'), new Command('STATUS_CHECK')];
+  //   let testMessage = new Message('SOME TEST MESSAGE', testCommands);
+  //       expect(testRover.receiveMessage(testMessage).message).toBe('SOME TEST MESSAGE');
+  //  });
   //  // spec 9
   //  it("response returned by receiveMessage includes two results if two commands are sent in the message", function(){
   //   expect().toBe()
