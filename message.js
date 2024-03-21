@@ -1,11 +1,12 @@
 class Message {
-   constructor(messageName, commands) {
-      this.messageName = messageName;
-      if (!messageName) {
-        throw Error("Message Name required.");
-      }
-      this.commands = commands;
-    }
+  // Write code here!
+  constructor(name, commands) {
+     this.name = name;
+     if (!name) {
+       throw Error("Message name required.");
+     }
+     this.commands = commands;
+   }
 }
 
 module.exports = Message; 
